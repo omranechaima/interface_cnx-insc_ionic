@@ -1,0 +1,40 @@
+<ion-content>
+  <div class="logo">
+    <ion-icon color="light"name="person-circle"></ion-icon>
+  </div>
+<ion-item >
+  <ion-label color="light">Email</ion-label>
+  <ion-input color="light" type="mail" [(ngModel)]="email" placeholder="Adresse email"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label color="light">Mot de passe</ion-label>
+  <ion-input color="light" [(ngModel)]="password" type="password" placeholder="Mot de passe"></ion-input>
+</ion-item>
+
+<ion-item lines="none">
+  <ion-button color="light" slot="end" fill="clear">Mot de passe oublié ?</ion-button>
+</ion-item>
+
+<ion-button color="light" expand="block" shape="round" fill="outline" (click)="connexion(email,password)">Connexion</ion-button>
+<br>
+<ion-button color="tertiary" expand="block" shape="round" (click)="inscription()" >Inscription</ion-button>
+
+
+<ion-item class="cc">
+  <ion-label color="light"  >Ou connectez-vous avec</ion-label>
+</ion-item>
+
+
+<div class="flex">
+  <ion-button color="facebook" shape="round">
+    <ion-icon slot="start" name="logo-facebook"></ion-icon>
+    Facebook
+  </ion-button>
+  <ion-button color="google" shape="round">
+    <ion-icon slot="start" name="logo-google"></ion-icon>
+    Google
+  </ion-button>
+ 
+</div>
+</ion-content>
